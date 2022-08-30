@@ -1,0 +1,236 @@
+/*     
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Staatliches', cursive;
+*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+    width: 100%;
+    height: 1930px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    width: 736px;
+    margin: auto;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #535971;
+
+}
+
+header {
+    padding-top: 140px;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 417px;
+    
+    padding-bottom: 52px;
+    
+}
+
+header h1, header p {
+    color: #FFFFFF;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+fieldset {
+    border: none;
+}
+
+#formulario1 {
+    background: #FFFFFF;
+    border-radius: 8px 8px 0 0;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    
+    padding: 64px;
+}
+
+fieldset legend {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #535971;
+
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
+    margin-bottom: 38px;
+
+    width: 100%;
+}
+
+.fieldset-wrapper h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    color: #535971;
+}
+
+label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+span {
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #C1BCCC;
+}
+.fieldset-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 48%;
+}
+
+.input-wrapper input {
+    width: 100%;
+}
+
+.input-name input {
+    width: 100%;
+}
+
+.input-name input, .input-wrapper input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    Height: 56px;
+    background: #FAFAFC;
+}
+
+.col-3 {
+    display: flex;
+    
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
+    padding-right: 32px;
+    padding-top: 0;
+}
+
+.col-3 > div:nth-child(2) {
+    padding-right: 10px;
+    height: 58px;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
+
+.input-wrapper label span:hover {
+    color: #6c6a71;
+}
+
+
+input[type=""]::before {
+    content: attr(placeholder);
+    position: absolute;
+    color: #999999;
+  }
+  
+  input[type="date"] {
+    color: #ffffff;
+  }
+  
+  input[type="date"]:focus,
+  input[type="date"]:valid {
+    color: #666666;
+  }
+  
+  input[type="date"]:focus::before,
+  input[type="date"]:valid::before {
+    content: "";
+  }
+
+footer {
+    height: 160px;
+    background: #535971;
+    border-radius: 0px 0px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer input {
+    padding: 15px 40px;
+    gap: 10px;
+    width: 80%;
+
+    background: #FF5374;
+    border-radius: 20px;
+
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+form input:hover{
+    background: #e5e5eb;
+}
+
+footer input:hover {
+    background: #fc375e;
+
+}
